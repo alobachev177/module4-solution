@@ -1,3 +1,17 @@
+(function() {
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+    for (var i = 0; i < names.length; i++) {
+
+        if (names[i].toLowerCase().startsWith('j')) {
+            byeSpeaker.speak(names[i]);
+        } else {
+            helloSpeaker.speak(names[i]);
+        }
+    }
+})()
+
+
 // *******************************
 // START HERE IF YOU WANT A MORE CHALLENGING STARTING POINT FOR THIS ASSIGNMENT
 // *******************************
@@ -9,25 +23,6 @@
 // The program should say "Hello" to any name except names that start with a "J"
 // or "j", otherwise, the program should say "Good Bye". So, the final output
 // on the console should look like this:
-
-(function() {
-    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
-    for (var i = 0; i < names.length; i++) {
-
-        if (names[i].toLowerCase().startsWith('j')) {
-
-            console.log('name starts with J/j :>> ' + names[i]);
-
-        } else {
-
-            console.log('name starts with any letter :>> ' + names[i]);
-
-        }
-    }
-})()
-
-
 // STEP 1:
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
